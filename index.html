@@ -10,18 +10,23 @@
       padding: 0;
       height: 100%;
       background-color: green;
-      color: white; /* Schriftfarbe auf weiß gesetzt */
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     .text {
-      font-size: 8vw;       /* skaliert mit der Fensterbreite */
-      width: 90vw;          /* nutzt fast volle Seitenbreite */
+      font-size: 8vw;
+      width: 90vw;
       text-align: center;
       line-height: 1.2;
       word-wrap: break-word;
+    }
+
+    .emoji {
+      font-size: 10vw; /* Größerer Smiley */
+      margin-top: 1vw;
     }
   </style>
 </head>
@@ -31,9 +36,8 @@
     ich würde dich<br><br>
     gerne kennenlernen<br><br>
     und mit dir tanzen.<br><br>
-    <strong>Paul</strong>
-    😊
+    <strong>Paul</strong><br><br>
+    <div class="emoji">😊</div>
   </div>
 </body>
 </html>
-
