@@ -5,29 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nachricht von Paul</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       background-color: green;
-      color: white;
+      color: white; /* Schriftfarbe auf weiß gesetzt */
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      font-size: 5vw; /* passt sich der Fensterbreite an */
+      align-items: center;
+    }
+
+    .text {
+      font-size: 8vw;       /* skaliert mit der Fensterbreite */
+      width: 90vw;          /* nutzt fast volle Seitenbreite */
       text-align: center;
+      line-height: 1.2;
+      word-wrap: break-word;
     }
   </style>
 </head>
 <body>
-  <div>
+  <div class="text">
     Hallo,<br><br>
-	ich würde dich<br><br>
-	gerne kennenlernen<br><br>
-	und mit dir tanzen.<br><br>
-    <strong>Paul</strong><br><br>
+    ich würde dich<br><br>
+    gerne kennenlernen<br><br>
+    und mit dir tanzen.<br><br>
+    <strong>Paul</strong>
   </div>
 </body>
 </html>
-
-
