@@ -17,21 +17,69 @@
     }
 
     .text {
-      font-size: 6vmin;     /* Skaliert an Breite UND Höhe */
-      width: 90vw;
+      font-size: 7vmin;
+      width: 95vw;
       text-align: center;
       line-height: 1.3;
       word-wrap: break-word;
     }
 
     .emoji {
-      font-size: 7vmin;
+      font-size: 8vmin;
       margin-top: 1vmin;
     }
 
     .klein {
-      font-size: 3vmin;     /* Deutlich kleiner */
+      font-size: 3.5vmin;
       margin-top: 1vmin;
+    }
+
+    /* 👉 PC oder Tablet (breit) */
+    @media (min-width: 768px) {
+      .text {
+        font-size: 4vmin;
+        width: 70vw;
+      }
+
+      .emoji {
+        font-size: 5vmin;
+      }
+
+      .klein {
+        font-size: 2vmin;
+      }
+    }
+
+    /* 👉 Smartphone Hochformat */
+    @media (orientation: portrait) and (max-width: 767px) {
+      .text {
+        font-size: 7.5vmin;
+        width: 98vw;
+      }
+
+      .emoji {
+        font-size: 9vmin;
+      }
+
+      .klein {
+        font-size: 4vmin;
+      }
+    }
+
+    /* 👉 Smartphone Querformat */
+    @media (orientation: landscape) and (max-width: 767px) {
+      .text {
+        font-size: 5vmin;
+        width: 85vw;
+      }
+
+      .emoji {
+        font-size: 6vmin;
+      }
+
+      .klein {
+        font-size: 3vmin;
+      }
     }
   </style>
 </head>
