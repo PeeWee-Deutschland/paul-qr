@@ -14,47 +14,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      position: relative;
     }
 
     .inhalt {
       font-size: 6vmin;
       width: 90vw;
+      text-align: center;
       line-height: 1.4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
-    .zurueck-link {
-      margin-top: 5vmin;
+    .zurueck {
+      position: absolute;
+      left: 2vw;
+      top: 50%;
+      transform: translateY(-50%);
       text-decoration: none;
-      color: black;
-      font-size: 4vmin;
-      display: inline-flex;
-      align-items: center;
-      gap: 1vmin;
     }
 
-    .zurueck-link svg {
-      width: 6vmin;
-      height: 6vmin;
-      fill: black;
-    }
-
+    /* Responsive Anpassung */
     @media (min-width: 768px) {
       .inhalt {
         font-size: 4vmin;
         width: 60vw;
-      }
-
-      .zurueck-link {
-        font-size: 3vmin;
-      }
-
-      .zurueck-link svg {
-        width: 5vmin;
-        height: 5vmin;
       }
     }
   </style>
@@ -66,14 +48,13 @@
     und gute Gespräche.<br><br>
     Vielleicht tanzen<br>
     wir ja bald zusammen? 😊
-
-    <!-- Zurück-Link mit Pfeil nebeneinander -->
-    <a href="index.html" class="zurueck-link" aria-label="Zurück zur Startseite">
-      zurück
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M14 7l-5 5 5 5V7z"/>
-      </svg>
-    </a>
   </div>
+
+  <!-- Pfeil zurück zur Startseite -->
+  <a href="index.html" class="zurueck" aria-label="Zurück zur Startseite">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="8vmin" height="8vmin">
+      <path d="M14 7l-5 5 5 5V7z"/>
+    </svg>
+  </a>
 </body>
 </html>
