@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nachricht von Paul</title>
   <style>
     html, body {
@@ -14,6 +14,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
 
     .text {
@@ -32,6 +33,14 @@
     .klein {
       font-size: 3.5vmin;
       margin-top: 1vmin;
+    }
+
+    .svg-pfeil {
+      position: absolute;
+      right: 2vw;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
     }
 
     /* 👉 PC oder Tablet (breit) */
@@ -88,11 +97,18 @@
     Hallo,<br><br>
     schön, dass du mich<br><br>
     hier gefunden hast,<br><br>
-    noch schöner,<br><br> dich kennenzulernen.<br><br>
-       <strong>Paul</strong><br>
-    <div class="emoji">😊</div><br>
+    noch schöner,<br><br>
+    dich kennenzulernen.<br><br>
+    <strong>Paul</strong><br><br>
+    <div class="emoji">😊</div><br><br>
     <div class="klein">(aber nur wenn du weiblich bist) 😉</div>
   </div>
+
+  <!-- 👉 Schwarzer SVG-Pfeil nach rechts -->
+  <a href="ueber-mich.html" class="svg-pfeil" aria-label="Weiter zur Seite Über mich">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="8vmin" height="8vmin">
+      <path d="M10 17l5-5-5-5v10z"/>
+    </svg>
+  </a>
 </body>
 </html>
-
