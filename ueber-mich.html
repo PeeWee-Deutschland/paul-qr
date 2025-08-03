@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über mich – Paul</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: green;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .inhalt {
+      font-size: 6vmin;
+      width: 90vw;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .zurueck {
+      position: absolute;
+      left: 2vw;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+    }
+
+    /* Responsive Anpassung */
+    @media (min-width: 768px) {
+      .inhalt {
+        font-size: 4vmin;
+        width: 60vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="inhalt">
+    Ich bin Paul,<br><br>
+    ich liebe Musik, Tanzen<br>
+    und gute Gespräche.<br><br>
+    Vielleicht tanzen<br>
+    wir ja bald zusammen? 😊
+  </div>
+
+  <!-- Pfeil zurück zur Startseite -->
+  <a href="index.html" class="zurueck" aria-label="Zurück zur Startseite">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="8vmin" height="8vmin">
+      <path d="M14 7l-5 5 5 5V7z"/>
+    </svg>
+  </a>
+</body>
+</html>
