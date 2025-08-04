@@ -5,33 +5,37 @@ html, body {
   background-color: green;
   color: white;
   text-align: center;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: green;
-  color: white;
-  text-align: center;
+  font-family: sans-serif;
 }
 
 .text {
-  font-size: clamp(1.5rem, 5vmin, 2.5rem);
+  font-size: 6vmin;
   width: 90vw;
-  line-height: 1.2;
-  margin: 5vh auto 2vh;
+  margin: 5vh auto;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Absatzabstände */
+.text p {
+  margin: 1.5vh 0;
+}
+
+/* Emoji */
 .emoji {
   font-size: 8vmin;
-  margin-top: 1vmin;
+  margin-top: 2vmin;
 }
 
+/* Kleiner Text */
 .klein {
   font-size: 3.5vmin;
-  margin-top: 1vmin;
+  margin-top: 2vmin;
 }
 
+/* Links mit Pfeilen */
 .zurueck-link, .mehr-link {
   margin-top: 5vmin;
   text-decoration: none;
@@ -48,11 +52,15 @@ body {
   fill: black;
 }
 
-/* 👉 PC oder Tablet (breit) */
+/* 👉 Tablet oder PC (Breitbild) */
 @media (min-width: 768px) {
   .text {
     font-size: 4vmin;
     width: 70vw;
+  }
+
+  .text p {
+    margin: 1vh 0;
   }
 
   .emoji {
@@ -68,23 +76,16 @@ body {
   }
 
   .mehr-link svg, .zurueck-link svg {
-    width: 5vmin;
-    height: 5vmin;
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    width: 4vmin;
+    height: 4vmin;
   }
 }
 
 /* 👉 Smartphone Hochformat */
 @media (orientation: portrait) and (max-width: 767px) {
   .text {
-    font-size: 7.5vmin;
-    width: 98vw;
+    font-size: 7vmin;
+    width: 95vw;
   }
 
   .emoji {
@@ -95,34 +96,27 @@ body {
     font-size: 4vmin;
   }
 
-  body {
-    display: block;
-    height: auto;
-    min-height: 100vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+  .mehr-link, .zurueck-link {
+    font-size: 4.5vmin;
   }
 }
 
 /* 👉 Smartphone Querformat */
 @media (orientation: landscape) and (max-width: 767px) {
   .text {
-    font-size: 5vmin;
+    font-size: 5.5vmin;
     width: 90vw;
   }
 
   .emoji {
-    font-size: 6vmin;
+    font-size: 7vmin;
   }
 
   .klein {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
   }
 
-  body {
-    display: block;
-    height: auto;
-    min-height: 100vh;
-    padding: 5vh 0;
+  .mehr-link, .zurueck-link {
+    font-size: 4vmin;
   }
 }
