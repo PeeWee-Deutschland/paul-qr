@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inhalt, .text {
+  font-size: 6vmin;
+  width: 90vw;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 8vmin;
+  margin-top: 1vmin;
+}
+
+.klein {
+  font-size: 3.5vmin;
+  margin-top: 1vmin;
+}
+
+.zurueck-link, .mehr-link {
+  margin-top: 5vmin;
+  text-decoration: none;
+  color: black;
+  font-size: 4vmin;
+  display: inline-flex;
+  align-items: center;
+  gap: 1vmin;
+}
+
+.zurueck-link svg, .mehr-link svg {
+  width: 6vmin;
+  height: 6vmin;
+  fill: black;
+}
+
+@media (min-width: 768px) {
+  .inhalt, .text {
+    font-size: 4vmin;
+    width: 60vw;
+  }
+
+  .emoji {
+    font-size: 6vmin;
+  }
+
+  .klein {
+    font-size: 2vmin;
+  }
+
+  .zurueck-link, .mehr-link {
+    font-size: 3vmin;
+  }
+
+  .zurueck-link svg, .mehr-link svg {
+    width: 5vmin;
+    height: 5vmin;
+  }
+}
