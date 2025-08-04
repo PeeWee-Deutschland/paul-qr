@@ -4,124 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nachricht von Paul</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: green;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .text {
-      font-size: 7vmin;
-      width: 95vw;
-      line-height: 1.3;
-      word-wrap: break-word;
-    }
-
-    .emoji {
-      font-size: 8vmin;
-      margin-top: 1vmin;
-    }
-
-    .klein {
-      font-size: 3.5vmin;
-      margin-top: 1vmin;
-    }
-
-
-    .mehr-link {
-      margin-top: 5vmin;
-      text-decoration: none;
-      color: black;
-      font-size: 4vmin;
-      display: inline-flex;
-      align-items: center;
-      gap: 1vmin;
-    }
-
-    .mehr-link svg {
-      width: 6vmin;
-      height: 6vmin;
-      fill: black;
-    }
-
-    /* 👉 PC oder Tablet (breit) */
-    @media (min-width: 768px) {
-      .text {
-        font-size: 4vmin;
-        width: 70vw;
-      }
-
-      .emoji {
-        font-size: 5vmin;
-      }
-
-      .klein {
-        font-size: 2vmin;
-      }
-
-      .mehr-link {
-        font-size: 3vmin;
-      }
-
-      .mehr-link svg {
-        width: 6vmin;
-        height: 6vmin;
-      }
-    }
-
-    /* 👉 Smartphone Hochformat */
-    @media (orientation: portrait) and (max-width: 767px) {
-      .text {
-        font-size: 7.5vmin;
-        width: 98vw;
-      }
-
-      .emoji {
-        font-size: 9vmin;
-      }
-
-      .klein {
-        font-size: 4vmin;
-      }
-    }
-
-    /* 👉 Smartphone Querformat */
-    @media (orientation: landscape) and (max-width: 767px) {
-      .text {
-        font-size: 5vmin;
-        width: 85vw;
-      }
-
-      .emoji {
-        font-size: 6vmin;
-      }
-
-      .klein {
-        font-size: 3vmin;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="text">
     Hallo,<br><br>
     schön, dass du mich<br><br>
-    hier gefunden hast.<br><br>
-    Noch schöner wäre es,<br><br>
-    dich kennenzulernen.<br><br>
+    hier gefunden hast,<br><br>
+    noch schöner,<br><br> dich kennenzulernen.<br><br>
     <strong>Paul</strong><br>
     <div class="emoji">😊</div><br>
     <div class="klein">(aber nur wenn du weiblich bist) 😉</div>
 
-    <!-- Mehr-Link mit Pfeil -->
-    <a href="ueber-mich.html" class="mehr-link" aria-label="Mehr über Paul">
+    <!-- Link zur "Über mich"-Seite -->
+    <a href="ueber-mich.html" class="mehr-link" aria-label="Mehr zu mir">
       mehr zu mir
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M10 17l5-5-5-5v10z"/>
@@ -130,6 +26,3 @@
   </div>
 </body>
 </html>
-
-
-
