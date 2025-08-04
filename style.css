@@ -8,18 +8,18 @@ html, body {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: green;
+  color: white;
+  text-align: center;
 }
 
 .text {
   font-size: clamp(1.5rem, 5vmin, 2.5rem);
   width: 90vw;
-  line-height: 1.4;
-  margin: 0 auto;
-  white-space: pre-line;
+  line-height: 1.2;
+  margin: 5vh auto 2vh;
 }
 
 .emoji {
