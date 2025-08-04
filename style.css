@@ -11,8 +11,8 @@ html, body {
 }
 
 .inhalt, .text {
-  font-size: 6vmin;
-  width: 90vw;
+  font-size: 7vmin;
+  width: 95vw;
   line-height: 1.4;
   display: flex;
   flex-direction: column;
