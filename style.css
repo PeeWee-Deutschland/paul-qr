@@ -10,7 +10,7 @@ html, body {
   text-align: center;
 }
 
-.inhalt, .text {
+.text {
   font-size: 6vmin;
   width: 90vw;
   line-height: 1.4;
