@@ -14,7 +14,7 @@ body {
 }
 
 .text {
-  font-size: 6vmin;
+  font-size: 6rem;
   width: 90vw;
   line-height: 1.4;
   display: flex;
@@ -23,53 +23,53 @@ body {
 }
 
 .emoji {
-  font-size: 8vmin;
-  margin-top: 1vmin;
+  font-size: 8rem;
+  margin-top: 1rem;
 }
 
 .klein {
-  font-size: 3.5vmin;
-  margin-top: 1vmin;
+  font-size: 3.5rem;
+  margin-top: 1rem;
 }
 
 .zurueck-link, .mehr-link {
-  margin-top: 5vmin;
+  margin-top: 5rem;
   text-decoration: none;
   color: black;
-  font-size: 4vmin;
+  font-size: 4rem;
   display: inline-flex;
   align-items: center;
-  gap: 1vmin;
+  gap: 1rem;
 }
 
 .zurueck-link svg, .mehr-link svg {
-  width: 6vmin;
-  height: 6vmin;
+  width: 6rem;
+  height: 6rem;
   fill: black;
 }
 
 /* 👉 PC oder Tablet (breit) */
 @media (min-width: 768px) {
   .text {
-    font-size: 4vmin;
+    font-size: 4rem;
     width: 70vw;
   }
 
   .emoji {
-    font-size: 5vmin;
+    font-size: 5rem;
   }
 
   .klein {
-    font-size: 2vmin;
+    font-size: 2rem;
   }
 
   .mehr-link, .zurueck-link {
-    font-size: 3vmin;
+    font-size: 3rem;
   }
 
   .mehr-link svg, .zurueck-link svg {
-    width: 5vmin;
-    height: 5vmin;
+    width: 5rem;
+    height: 5rem;
   }
 
   body {
@@ -83,16 +83,16 @@ body {
 /* 👉 Smartphone Hochformat */
 @media (orientation: portrait) and (max-width: 767px) {
   .text {
-    font-size: 7.5vmin;
+    font-size: 7.5rem;
     width: 98vw;
   }
 
   .emoji {
-    font-size: 9vmin;
+    font-size: 9rem;
   }
 
   .klein {
-    font-size: 4vmin;
+    font-size: 4rem;
   }
 
   body {
@@ -107,16 +107,16 @@ body {
 /* 👉 Smartphone Querformat */
 @media (orientation: landscape) and (max-width: 767px) {
   .text {
-    font-size: 5vmin;
+    font-size: 5rem;
     width: 90vw;
   }
 
   .emoji {
-    font-size: 6vmin;
+    font-size: 6rem;
   }
 
   .klein {
-    font-size: 3vmin;
+    font-size: 3rem;
   }
 
   body {
