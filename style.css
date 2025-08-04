@@ -1,13 +1,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background-color: green;
   color: white;
+  text-align: center;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  min-height: 100vh;
 }
 
 .text {
@@ -48,56 +51,78 @@ html, body {
 /* 👉 PC oder Tablet (breit) */
 @media (min-width: 768px) {
   .text {
-	font-size: 4vmin;
-	width: 70vw;
+    font-size: 4vmin;
+    width: 70vw;
   }
 
   .emoji {
-	font-size: 5vmin;
+    font-size: 5vmin;
   }
 
   .klein {
-	font-size: 2vmin;
+    font-size: 2vmin;
   }
 
-  .mehr-link {
-	font-size: 3vmin;
+  .mehr-link, .zurueck-link {
+    font-size: 3vmin;
   }
 
-  .mehr-link svg {
-	width: 6vmin;
-	height: 6vmin;
+  .mehr-link svg, .zurueck-link svg {
+    width: 5vmin;
+    height: 5vmin;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 }
 
 /* 👉 Smartphone Hochformat */
 @media (orientation: portrait) and (max-width: 767px) {
   .text {
-	font-size: 7.5vmin;
-	width: 98vw;
+    font-size: 7.5vmin;
+    width: 98vw;
   }
 
   .emoji {
-	font-size: 9vmin;
+    font-size: 9vmin;
   }
 
   .klein {
-	font-size: 4vmin;
+    font-size: 4vmin;
+  }
+
+  body {
+    display: block;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
 }
 
 /* 👉 Smartphone Querformat */
 @media (orientation: landscape) and (max-width: 767px) {
   .text {
-	font-size: 5vmin;
-	width: 85vw;
+    font-size: 5vmin;
+    width: 90vw;
   }
 
   .emoji {
-	font-size: 6vmin;
+    font-size: 6vmin;
   }
 
   .klein {
-	font-size: 3vmin;
+    font-size: 3vmin;
+  }
+
+  body {
+    display: block;
+    height: auto;
+    min-height: 100vh;
+    padding: 5vh 0;
   }
 }
