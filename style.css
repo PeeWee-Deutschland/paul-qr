@@ -41,8 +41,8 @@ html, body {
 .zurueck-link, .mehr-link {
   margin-top: 5vmin;
   text-decoration: none;
-  color: black;
-  font-size: 4vmin;
+  color: red;
+  font-size: 5vmin;
   display: inline-flex;
   align-items: center;
   gap: 1vmin;
