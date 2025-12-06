@@ -51,7 +51,7 @@ html, body {
 .zurueck-link svg, .mehr-link svg {
   width: 6vmin;
   height: 6vmin;
-  fill: red;
+  fill: white;
 }
 
 /* 👉 Tablet oder PC (Breitbild) */
