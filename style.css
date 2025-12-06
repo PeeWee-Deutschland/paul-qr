@@ -42,7 +42,7 @@ html, body {
   margin-top: 5vmin;
   text-decoration: none;
   color: red;
-  font-size: 5vmin;
+  font-size: 4vmin;
   display: inline-flex;
   align-items: center;
   gap: 1vmin;
@@ -51,7 +51,7 @@ html, body {
 .zurueck-link svg, .mehr-link svg {
   width: 6vmin;
   height: 6vmin;
-  fill: black;
+  fill: red;
 }
 
 /* 👉 Tablet oder PC (Breitbild) */
